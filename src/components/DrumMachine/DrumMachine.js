@@ -23,22 +23,22 @@ function DrumMachine() {
   return (
     <div className={styles.wrapper}>
       <button
-        onClick={() => {soundEnabled && play({ id: "kick" });}}
+        onClick={() => {play({ id: "kick" });}}
       >
         Kick
       </button>
       <button
-        onClick={() => {soundEnabled && play({ id: "hihat" });}}
+        onClick={() => {play({ id: "hihat" });}}
       >
         Hat
       </button>
       <button
-        onClick={() => {soundEnabled && play({ id: "snare" });}}
+        onClick={() => {play({ id: "snare" });}}
       >
         Snare
       </button>
       <button
-        onClick={() => {soundEnabled && play({ id: "cowbell" });}}
+        onClick={() => {play({ id: "cowbell" });}}
       >
         Cowbell
       </button>
