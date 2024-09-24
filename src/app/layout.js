@@ -1,18 +1,14 @@
-'use client'
 import React from 'react';
 
 import Header from '../components/Header';
+import SoundEnabledProvider from '../components/SoundEnabledProvider/SoundEnabledProvider';
 
 import './styles.css';
 
-export const SoundEnabledContext = React.createContext();
-
 function RootLayout({ children }) {
-  const [soundEnabled, setSoundEnabled] = React.useState(true);
-  const value = { soundEnabled, setSoundEnabled };
   return (
     <html lang="en">
-      <SoundEnabledContext.Provider value={value}>
+      <SoundEnabledProvider>
         <body>
           <Header />
           {children}
@@ -21,7 +17,7 @@ function RootLayout({ children }) {
             <span>Thanks for visiting!</span>
           </footer>
         </body>
-      </SoundEnabledContext.Provider>
+      </SoundEnabledProvider>
     </html>
   );
 }

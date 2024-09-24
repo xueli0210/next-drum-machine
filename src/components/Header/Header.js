@@ -4,9 +4,9 @@ import { Volume2, VolumeX } from 'react-feather';
 
 import VisuallyHidden from '../VisuallyHidden';
 import MaxWidthWrapper from '../MaxWidthWrapper';
-import styles from './Header.module.css';
+import { SoundEnabledContext } from '../SoundEnabledProvider/SoundEnabledProvider';
 
-import { SoundEnabledContext } from '../../app/layout';
+import styles from './Header.module.css';
 
 function Header() {
   const id = React.useId();

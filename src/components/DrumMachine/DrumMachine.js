@@ -2,9 +2,9 @@
 import React from 'react';
 import useSound from 'use-sound';
 
-import styles from './DrumMachine.module.css';
+import { SoundEnabledContext } from '../SoundEnabledProvider/SoundEnabledProvider';
 
-import { SoundEnabledContext } from '../../app/layout';
+import styles from './DrumMachine.module.css';
 
 const SOUND_SRC = '/909-drums.mp3';
 
