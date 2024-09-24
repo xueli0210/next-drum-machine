@@ -15,3 +15,13 @@ function SoundEnabledProvider({ children }) {
 }
 
 export default SoundEnabledProvider;
+
+export function useSoundEnabled() {
+  const data = React.useContext(SoundEnabledContext);
+
+  if (!data) {
+    throw new Error("Cannot access sound toggle, please try again later.");
+  }
+
+  return data;
+}
